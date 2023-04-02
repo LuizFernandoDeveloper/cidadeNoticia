@@ -5,11 +5,11 @@ export default  function headerMenuButton(){
     button.addEventListener('click', function(){
         if( nav.classList.length == 1){
             nav.classList.add("header__nav__mobile--is-active");
-            button.setAttribute('background-image', '../shared/images/menu/x.svg');
+            document.getElementById('header__button-menu').style.backgroundImage =  'url(./src/shared/images/menu/x.svg)';
         }
         else{
             nav.classList.remove("header__nav__mobile--is-active");
-            button.setAttribute('background-image', '../shared/images/menu/Hamburger_icon_white.svg');
+            document.getElementById('header__button-menu').style.backgroundImage=  'url(./src/shared/images/menu/Hamburger_icon_white.svg)';
         }
     })
 }
